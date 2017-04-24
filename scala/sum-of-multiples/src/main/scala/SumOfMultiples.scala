@@ -1,4 +1,7 @@
 object SumOfMultiples {
-  def sumOfMultiples(factors: Set[Int], limit: Int): Int = ???
+  def sumOfMultiples(y: Set[Int], x: Int): Int = {
+    (1 to x - 1).filter(
+        (i) => y.exists(
+            (j) =>  i%j == 0)).sum
+  }
 }
-
