@@ -1,0 +1,1 @@
+/home/atenea/exercism/rust/all-your-base/target/debug/all_your_base-8e6d7a3374543563: /home/atenea/exercism/rust/all-your-base/tests/all-your-base.rs /home/atenea/exercism/rust/all-your-base/src/lib.rs
