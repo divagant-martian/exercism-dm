@@ -1,0 +1,126 @@
+format version: 5
+output mode:
+1 items
+0 -> single
+output directories:
+1 items
+output dir -> /home/atenea/exercism/scala/run-length-encoding/target/scala-2.12/classes
+compile options:
+0 items
+javac options:
+0 items
+compiler version:
+1 items
+0 -> 2.12.1
+compile order:
+1 items
+0 -> Mixed
+name hashing:
+1 items
+0 -> true
+products:
+2 items
+/home/atenea/exercism/scala/run-length-encoding/src/main/scala/RunLengthEncoding.scala -> /home/atenea/exercism/scala/run-length-encoding/target/scala-2.12/classes/RunLengthEncoding$.class
+/home/atenea/exercism/scala/run-length-encoding/src/main/scala/RunLengthEncoding.scala -> /home/atenea/exercism/scala/run-length-encoding/target/scala-2.12/classes/RunLengthEncoding.class
+binary dependencies:
+2 items
+/home/atenea/exercism/scala/run-length-encoding/src/main/scala/RunLengthEncoding.scala -> /home/atenea/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.1.jar
+/home/atenea/exercism/scala/run-length-encoding/src/main/scala/RunLengthEncoding.scala -> /usr/lib/jvm/java-8-jdk/jre/lib/rt.jar
+direct source dependencies:
+0 items
+direct external dependencies:
+0 items
+public inherited source dependencies:
+0 items
+public inherited external dependencies:
+0 items
+member reference internal dependencies:
+0 items
+member reference external dependencies:
+0 items
+inheritance internal dependencies:
+0 items
+inheritance external dependencies:
+0 items
+class names:
+2 items
+/home/atenea/exercism/scala/run-length-encoding/src/main/scala/RunLengthEncoding.scala -> RunLengthEncoding
+/home/atenea/exercism/scala/run-length-encoding/src/main/scala/RunLengthEncoding.scala -> RunLengthEncoding$
+used names:
+44 items
+/home/atenea/exercism/scala/run-length-encoding/src/main/scala/RunLengthEncoding.scala -> *
+/home/atenea/exercism/scala/run-length-encoding/src/main/scala/RunLengthEncoding.scala -> +
+/home/atenea/exercism/scala/run-length-encoding/src/main/scala/RunLengthEncoding.scala -> <init>
+/home/atenea/exercism/scala/run-length-encoding/src/main/scala/RunLengthEncoding.scala -> ==
+/home/atenea/exercism/scala/run-length-encoding/src/main/scala/RunLengthEncoding.scala -> >
+/home/atenea/exercism/scala/run-length-encoding/src/main/scala/RunLengthEncoding.scala -> Any
+/home/atenea/exercism/scala/run-length-encoding/src/main/scala/RunLengthEncoding.scala -> AnyRef
+/home/atenea/exercism/scala/run-length-encoding/src/main/scala/RunLengthEncoding.scala -> B
+/home/atenea/exercism/scala/run-length-encoding/src/main/scala/RunLengthEncoding.scala -> Boolean
+/home/atenea/exercism/scala/run-length-encoding/src/main/scala/RunLengthEncoding.scala -> Char
+/home/atenea/exercism/scala/run-length-encoding/src/main/scala/RunLengthEncoding.scala -> Character
+/home/atenea/exercism/scala/run-length-encoding/src/main/scala/RunLengthEncoding.scala -> Function2
+/home/atenea/exercism/scala/run-length-encoding/src/main/scala/RunLengthEncoding.scala -> Int
+/home/atenea/exercism/scala/run-length-encoding/src/main/scala/RunLengthEncoding.scala -> Nothing
+/home/atenea/exercism/scala/run-length-encoding/src/main/scala/RunLengthEncoding.scala -> Object
+/home/atenea/exercism/scala/run-length-encoding/src/main/scala/RunLengthEncoding.scala -> Predef
+/home/atenea/exercism/scala/run-length-encoding/src/main/scala/RunLengthEncoding.scala -> RunLengthEncoding
+/home/atenea/exercism/scala/run-length-encoding/src/main/scala/RunLengthEncoding.scala -> String
+/home/atenea/exercism/scala/run-length-encoding/src/main/scala/RunLengthEncoding.scala -> StringOps
+/home/atenea/exercism/scala/run-length-encoding/src/main/scala/RunLengthEncoding.scala -> T1
+/home/atenea/exercism/scala/run-length-encoding/src/main/scala/RunLengthEncoding.scala -> T2
+/home/atenea/exercism/scala/run-length-encoding/src/main/scala/RunLengthEncoding.scala -> T3
+/home/atenea/exercism/scala/run-length-encoding/src/main/scala/RunLengthEncoding.scala -> T4
+/home/atenea/exercism/scala/run-length-encoding/src/main/scala/RunLengthEncoding.scala -> Tuple2
+/home/atenea/exercism/scala/run-length-encoding/src/main/scala/RunLengthEncoding.scala -> Tuple4
+/home/atenea/exercism/scala/run-length-encoding/src/main/scala/RunLengthEncoding.scala -> _1
+/home/atenea/exercism/scala/run-length-encoding/src/main/scala/RunLengthEncoding.scala -> _2
+/home/atenea/exercism/scala/run-length-encoding/src/main/scala/RunLengthEncoding.scala -> _3
+/home/atenea/exercism/scala/run-length-encoding/src/main/scala/RunLengthEncoding.scala -> _4
+/home/atenea/exercism/scala/run-length-encoding/src/main/scala/RunLengthEncoding.scala -> acc
+/home/atenea/exercism/scala/run-length-encoding/src/main/scala/RunLengthEncoding.scala -> augmentString
+/home/atenea/exercism/scala/run-length-encoding/src/main/scala/RunLengthEncoding.scala -> big_acc
+/home/atenea/exercism/scala/run-length-encoding/src/main/scala/RunLengthEncoding.scala -> c
+/home/atenea/exercism/scala/run-length-encoding/src/main/scala/RunLengthEncoding.scala -> foldLeft
+/home/atenea/exercism/scala/run-length-encoding/src/main/scala/RunLengthEncoding.scala -> input
+/home/atenea/exercism/scala/run-length-encoding/src/main/scala/RunLengthEncoding.scala -> isDigit
+/home/atenea/exercism/scala/run-length-encoding/src/main/scala/RunLengthEncoding.scala -> java
+/home/atenea/exercism/scala/run-length-encoding/src/main/scala/RunLengthEncoding.scala -> lang
+/home/atenea/exercism/scala/run-length-encoding/src/main/scala/RunLengthEncoding.scala -> length
+/home/atenea/exercism/scala/run-length-encoding/src/main/scala/RunLengthEncoding.scala -> math
+/home/atenea/exercism/scala/run-length-encoding/src/main/scala/RunLengthEncoding.scala -> max
+/home/atenea/exercism/scala/run-length-encoding/src/main/scala/RunLengthEncoding.scala -> package
+/home/atenea/exercism/scala/run-length-encoding/src/main/scala/RunLengthEncoding.scala -> scala
+/home/atenea/exercism/scala/run-length-encoding/src/main/scala/RunLengthEncoding.scala -> toInt
+product stamps:
+2 items
+/home/atenea/exercism/scala/run-length-encoding/target/scala-2.12/classes/RunLengthEncoding$.class -> lastModified(1493135129000)
+/home/atenea/exercism/scala/run-length-encoding/target/scala-2.12/classes/RunLengthEncoding.class -> lastModified(1493135129000)
+source stamps:
+1 items
+/home/atenea/exercism/scala/run-length-encoding/src/main/scala/RunLengthEncoding.scala -> hash(b01e1ada7f612faab2c656506838348d87ca0324)
+binary stamps:
+2 items
+/home/atenea/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.1.jar -> lastModified(1480936165000)
+/usr/lib/jvm/java-8-jdk/jre/lib/rt.jar -> lastModified(1489566767000)
+class names:
+2 items
+/home/atenea/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.1.jar -> scala.Predef$
+/usr/lib/jvm/java-8-jdk/jre/lib/rt.jar -> java.lang.Object
+internal apis:
+1 items
+/home/atenea/exercism/scala/run-length-encoding/src/main/scala/RunLengthEncoding.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhwBPff4gAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAAAWc3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwPgsnInQABm5vdGlmeXNxAH4ADDvEeBZ0AAZlbmNvZGVzcQB+AAx+sHnedAAEd2FpdHNxAH4ADAVsgah0AA0kYXNJbnN0YW5jZU9mc3EAfgAMSfn8enQABmVxdWFsc3NxAH4ADIpShG50AAxhc0luc3RhbmNlT2ZzcQB+AAwLffiKdAARUnVuTGVuZ3RoRW5jb2RpbmdzcQB+AAxZ0BdmdAAMc3luY2hyb25pemVkc3EAfgAM0nPB73QADSRpc0luc3RhbmNlT2ZzcQB+AAz8DxMIdAAGZGVjb2Rlc3EAfgAM+sEVaXQACW5vdGlmeUFsbHNxAH4ADG0QZmJ0AAxpc0luc3RhbmNlT2ZzcQB+AAxs6C3pdAACPT1zcQB+AAwhL/bOdAAFY2xvbmVzcQB+AAwSwavAdAAIdG9TdHJpbmdzcQB+AAxE1JBodAACIT1zcQB+AAyVaux2dAAIZ2V0Q2xhc3NzcQB+AAwLUlbUdAACbmVzcQB+AAwZD00bdAACZXFzcQB+AAxor7m8dAACIyNzcQB+AAyTxspidAAIZmluYWxpemVzcQB+AAwVbnDidAAIaGFzaENvZGVzcgATeHNidGkuYXBpLlNvdXJjZUFQSblep/kpIzikAgACWwALZGVmaW5pdGlvbnN0ABdbTHhzYnRpL2FwaS9EZWZpbml0aW9uO1sACHBhY2thZ2VzdAAUW0x4c2J0aS9hcGkvUGFja2FnZTt4cHVyABdbTHhzYnRpLmFwaS5EZWZpbml0aW9uO4jJXOe0414OAgAAeHAAAAABc3IAE3hzYnRpLmFwaS5DbGFzc0xpa2WDNByh37CXbAIABEwADmRlZmluaXRpb25UeXBldAAaTHhzYnRpL2FwaS9EZWZpbml0aW9uVHlwZTtbABBzYXZlZEFubm90YXRpb25zdAATW0xqYXZhL2xhbmcvU3RyaW5nO0wACHNlbGZUeXBldAAQTHhzYnRpL2FwaS9MYXp5O0wACXN0cnVjdHVyZXEAfgBDeHIAIXhzYnRpLmFwaS5QYXJhbWV0ZXJpemVkRGVmaW5pdGlvbvkRbrHVUDziAgABWwAOdHlwZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9UeXBlUGFyYW1ldGVyO3hyABR4c2J0aS5hcGkuRGVmaW5pdGlvbocqG+hxQuNGAgAETAAGYWNjZXNzdAASTHhzYnRpL2FwaS9BY2Nlc3M7WwALYW5ub3RhdGlvbnN0ABdbTHhzYnRpL2FwaS9Bbm5vdGF0aW9uO0wACW1vZGlmaWVyc3QAFUx4c2J0aS9hcGkvTW9kaWZpZXJzO0wABG5hbWVxAH4ADXhwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnOX52HcEyZ7swIAAUIABWZsYWdzeHAAcQB+ABt1cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAH5yABh4c2J0aS5hcGkuRGVmaW5pdGlvblR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAZNb2R1bGV1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAAc3IAIXhzYnRpLmFwaS5BYnN0cmFjdExhenkkU3RyaWN0TGF6eQ1mHGspFiq4AgABTAAFdmFsdWV0ABJMamF2YS9sYW5nL09iamVjdDt4cHNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHBzcQB+AFpzcgATeHNidGkuYXBpLlN0cnVjdHVyZamq+YCTb9gAAgADTAAIZGVjbGFyZWRxAH4AQ0wACWluaGVyaXRlZHEAfgBDTAAHcGFyZW50c3EAfgBDeHEAfgBfc3EAfgBadXEAfgA+AAAAAHNxAH4AWnVxAH4APgAAAABzcQB+AFp1cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAAAnNyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4ADUwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+AF50AAZPYmplY3RzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+AF5zcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAANzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgANeHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABGphdmFzcQB+AHd0AARsYW5nc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+AHhzcQB+AGt0AANBbnlzcQB+AG9zcQB+AHJ1cQB+AHUAAAACc3EAfgB3dAAFc2NhbGFxAH4AfnVyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAAAc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFbpcnpv3VyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4ADUwAD3NvdXJjZURpcmVjdG9yeXEAfgANeHB0AEkvaG9tZS9hdGVuZWEvZXhlcmNpc20vc2NhbGEvcnVuLWxlbmd0aC1lbmNvZGluZy90YXJnZXQvc2NhbGEtMi4xMi9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUsB4a2n9hL6qyxlZQaDg0jYfKAyQ=
+external apis:
+0 items
+source infos:
+1 items
+/home/atenea/exercism/scala/run-length-encoding/src/main/scala/RunLengthEncoding.scala -> 
+AAAAAAAAAAA=
+compilations:
+5 items
+0 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABW6WzWv91cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQASS9ob21lL2F0ZW5lYS9leGVyY2lzbS9zY2FsYS9ydW4tbGVuZ3RoLWVuY29kaW5nL3RhcmdldC9zY2FsYS0yLjEyL2NsYXNzZXN0AAEv
+1 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABW6W31b11cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQASS9ob21lL2F0ZW5lYS9leGVyY2lzbS9zY2FsYS9ydW4tbGVuZ3RoLWVuY29kaW5nL3RhcmdldC9zY2FsYS0yLjEyL2NsYXNzZXN0AAEv
+2 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABW6W5yXp1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQASS9ob21lL2F0ZW5lYS9leGVyY2lzbS9zY2FsYS9ydW4tbGVuZ3RoLWVuY29kaW5nL3RhcmdldC9zY2FsYS0yLjEyL2NsYXNzZXN0AAEv
+3 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABW6W69hJ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQASS9ob21lL2F0ZW5lYS9leGVyY2lzbS9zY2FsYS9ydW4tbGVuZ3RoLWVuY29kaW5nL3RhcmdldC9zY2FsYS0yLjEyL2NsYXNzZXN0AAEv
+4 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABW6XJ6b91cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQASS9ob21lL2F0ZW5lYS9leGVyY2lzbS9zY2FsYS9ydW4tbGVuZ3RoLWVuY29kaW5nL3RhcmdldC9zY2FsYS0yLjEyL2NsYXNzZXN0AAEv

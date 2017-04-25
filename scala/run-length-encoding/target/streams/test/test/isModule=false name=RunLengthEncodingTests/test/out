@@ -1,0 +1,10 @@
+[0m[[0minfo[0m] [0m[32mRunLengthEncodingTests:[0m[0m
+[0m[[0minfo[0m] [0m[32m- encode empty string[0m[0m
+[0m[[0minfo[0m] [0m[32m- encode single characters only[0m[0m
+[0m[[0minfo[0m] [0m[32m- decode empty string[0m[0m
+[0m[[0minfo[0m] [0m[32m- decode single characters only[0m[0m
+[0m[[0minfo[0m] [0m[32m- encode simple[0m[0m
+[0m[[0minfo[0m] [0m[32m- decode simple[0m[0m
+[0m[[0minfo[0m] [0m[32m- encode with single values[0m[0m
+[0m[[0minfo[0m] [0m[32m- decode with single values[0m[0m
+[0m[[0minfo[0m] [0m[32m- decode(encode(...)) combination[0m[0m
