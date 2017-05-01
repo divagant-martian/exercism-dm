@@ -3,12 +3,14 @@ class Phrase(phraseP: String) {
 
   def wordCount(): Map[String, Int] = {
     phrase
-      .toLowerCase()
-      .map{(c) => {
-        if (c.isLetterOrDigit || c=='\'')
-          c
-        else
-          ' '
+      .toLowerCase
+      .map {(c) => {
+        if (c.isLetterOrDigit || c=='\'') c
+        else ' '
       }}
+      .split(" +")
+      .groupBy(identity)
+      .mapValues(_.size)
+      .toMap
   }
 }
