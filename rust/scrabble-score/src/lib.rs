@@ -1,22 +1,15 @@
-// use std::collections::HashMap;
-
-pub fn score(word:&str) -> i32{
-    let mut r = 0;
-    for ch in word.to_lowercase().chars() {
-        r += value(ch);
-    }
-    r
-}
-
-fn value(x:char) -> i32 {
-    match x {
-        'a'|'e'|'i'|'o'|'u'|'l'|'n'|'r'|'s'|'t' => 1,
-        'd'|'g' => 2,
-        'b'|'c'|'m'|'p' => 3,
-        'f'|'h'|'v'|'w'|'y' => 4,
-        'k' => 5,
-        'j'|'x' => 8,
-        'q'|'z' => 10,
-        _ => 0
-    }
+/// Compute the Scrabble score for a word.
+pub fn score(word: &str) -> u64 {
+    word.chars()
+        .map(|c| match c.to_ascii_uppercase() {
+            'A' | 'E' | 'I' | 'O' | 'U' | 'L' | 'N' | 'R' | 'S' | 'T' => 1,
+            'D' | 'G' => 2,
+            'B' | 'C' | 'M' | 'P' => 3,
+            'F' | 'H' | 'V' | 'W' | 'Y' => 4,
+            'K' => 5,
+            'J' | 'X' => 8,
+            'Q' | 'Z' => 10,
+            _ => 0,
+        })
+        .sum()
 }

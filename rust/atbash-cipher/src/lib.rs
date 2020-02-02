@@ -1,38 +1,36 @@
-pub fn encode(s:&str) -> String {
-    s.to_lowercase()
-        .chars()
-        .fold((String::new(),0),|(mut acc,i), x| {
-            if x>='a' && x<='z' { // ascii range = [97,122]
-                acc.push((219u8 - (x as u8)) as char );
-            }                  
-            else if x>='0' && x<='9'{
-                acc.push(x);
-            }
-            else{
-                return (acc,i); // else, ignore character. Counter does not increase
-            }
-            if i == 4 {
-                acc.push(' ');
-            }
-            return (acc,(i+1)%5);
-        })
-        .0
-        .trim()
-        .to_string()
+/// "Encipher" with the Atbash cipher.
+pub fn encode(plain: &str) -> String {
+    let mut acc = String::new();
+    plain.chars().fold(0, |count, c| {
+        if count > 0 && count % 5 == 0 && c.is_ascii_alphanumeric() {
+            acc.push(' ');
+        }
+        add_inverse(&mut acc, c) + count
+    });
+    acc
 }
 
-pub fn decode(s:&str) -> String {
-    s.chars()
-        .fold(String::new(),
-              |mut acc, x| {
-                  if x>='a' && x<='z' { // ascii range = [97,122]
-                      acc.push((219u8 - (x as u8)) as char );
-                  }
-                  else if x>='0' && x<='9'{
-                      acc.push(x);            
-                  }
-                  return acc;
-              }
-        )
-        .to_string()
+/// adds the corresponding inverse of c to the accumulator acc and returns the
+/// number of characters that were added
+fn add_inverse(acc: &mut String, c: char) -> usize {
+    match c {
+        'A'..='Z' | 'a'..='z' => {
+            acc.push((122 - c.to_ascii_lowercase() as u8 + 97) as char);
+            1
+        }
+        '0'..='9' => {
+            acc.push(c);
+            1
+        }
+        _ => 0,
+    }
+}
+
+/// "Decipher" with the Atbash cipher.
+pub fn decode(cipher: &str) -> String {
+    let mut acc = String::new();
+    for c in cipher.chars() {
+        add_inverse(&mut acc, c);
+    }
+    acc
 }

@@ -1,15 +1,13 @@
-pub fn hamming_distance(x:&str, y:&str) -> Result<i32,&'static str> {
-    if x.len() != y.len() {Err("carajo")}
-    else if x == y {Ok(0)}
-    else{
-        let mut xx = x.chars();
-        let mut yy = y.chars();
-        let mut r = 0;
-        for i in 0..x.len(){
-            if xx.next() != yy.next(){
-                r += 1;
-            }
-        }
-        Ok(r)
+/// Return the Hamming distance between the strings,
+/// or None if the lengths are mismatched.
+pub fn hamming_distance(s1: &str, s2: &str) -> Option<usize> {
+    if s1.len() != s2.len() {
+        return None;
     }
+    Some(s1.chars().zip(s2.chars()).fold(0, |acc, (c1, c2)| {
+        if c1 != c2 {
+            return acc + 1;
+        }
+        acc
+    }))
 }

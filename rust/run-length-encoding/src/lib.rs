@@ -1,45 +1,36 @@
-use std::cmp;
-
-pub fn encode(input: &str) -> String {
-    input
-        .chars()
-        .fold((String::new(), ' ', 0, 1), |(mut acc, last, last_n, pos), c| {
-            // acc = where answer is accumulated
-            // last = last character read
-            // last_n = accum count for last
-            if c == last {
-                if pos == input.len() { // end of string
-                    acc += (last_n + 1).to_string().as_str();
-                    acc.push(c);
+pub fn encode(source: &str) -> String {
+    if source.is_empty() {
+        return String::new();
+    }
+    let (last_c, count, answer) =
+        source
+            .chars()
+            .fold(('.', 0, String::new()), |(last_c, count, acc), c| {
+                if last_c == c {
+                    return (last_c, count + 1, acc);
                 }
-                (acc, last, last_n + 1, pos + 1)
-            }
-            else {
-                if last_n > 1 {
-                    acc += last_n.to_string().as_str();
+                // Write the encoding when there are no more repeated characters
+                match count {
+                    0 => (c, 1, acc),
+                    1 => (c, 1, acc + &last_c.to_string()),
+                    _ => (c, 1, acc + &count.to_string() + &last_c.to_string()),
                 }
-                if last_n > 0 { // ignore initial last (single whitespace)
-                    acc.push(last);
-                }
-                if pos == input.len() { // end of string
-                    acc.push(c);
-                }
-                (acc, c, 1, pos + 1)
-            }
-        }).0
+            });
+    // Handle the last char case
+    if count == 1 {
+        return answer + &last_c.to_string();
+    }
+    answer + &count.to_string() + &last_c.to_string()
 }
 
-pub fn decode(input: &str) -> String {
-    input
+pub fn decode(source: &str) -> String {
+    source
         .chars()
-        .fold((String::new(), 0), |(mut acc, last_n), c| {
-            if let Some(d) = c.to_digit(10) {
-                (acc, 10*last_n + d)
+        .fold(('.', 0, String::new()), |(last_c, count, acc), c| {
+            if let Some(n) = c.to_digit(10) {
+                return (last_c, 10 * count + n, acc);
             }
-            else {
-                acc += c.to_string()
-                    .repeat(cmp::max(last_n, 1) as usize).as_str();
-                (acc, 0)
-            }
-        }).0
+            (c, 0, acc + &c.to_string().repeat(count.max(1) as usize))
+        })
+        .2
 }

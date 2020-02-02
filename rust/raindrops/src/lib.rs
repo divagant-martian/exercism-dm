@@ -1,17 +1,16 @@
-
-pub fn raindrops(x:i32) -> String{
-    let mut r = "".to_string();
-    if x%3 == 0 {
-        r += "Pling";
+pub fn raindrops(n: u32) -> String {
+    let mut rd = String::new();
+    if n % 3 == 0 {
+        rd.push_str("Pling");
     }
-    if x%5 == 0 {
-        r += "Plang";
+    if n % 5 == 0 {
+        rd.push_str("Plang");
     }
-    if x%7 == 0 {
-        r += "Plong";
+    if n % 7 == 0 {
+        rd.push_str("Plong");
     }
-    if r == ""{
-        r = x.to_string()
+    if rd.is_empty() {
+        rd = n.to_string();
     }
-    r
+    rd
 }

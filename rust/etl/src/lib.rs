@@ -1,10 +1,7 @@
 use std::collections::BTreeMap;
 
-pub fn transform(input:&BTreeMap<i32, Vec<String>>) ->  BTreeMap<String, i32> {
-    input.iter()
-        .flat_map(|(k,vs)|
-                  vs.iter().map( move |v| 
-                                (v.to_lowercase(),*k)
-                  ))
-        .collect()
+pub fn transform(h: &BTreeMap<i32, Vec<char>>) -> BTreeMap<char, i32> {
+    h.into_iter().flat_map(|(score, vec)|{
+        vec.into_iter().map(|c| (c.to_ascii_lowercase(), *score)).collect::<Vec<_>>()
+    }).collect()
 }

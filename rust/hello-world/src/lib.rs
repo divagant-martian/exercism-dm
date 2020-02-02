@@ -1,9 +1,5 @@
-pub fn hello(name: Option<&str>) -> String {
-    if name.is_some(){
-        "Hello, ".to_string() + name.unwrap() + "!"
-    }
-    else {
-        "Hello, World!".to_string()
-    }
-    
+// The &'static here means the return type has a static lifetime.
+// This is a Rust feature that you don't need to worry about now.
+pub fn hello() -> &'static str {
+    "Hello, World!"
 }

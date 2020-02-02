@@ -1,28 +1,21 @@
-#[derive(PartialEq)]
-#[derive(Debug)]
-pub struct RibonucleicAcid {string: String}
-impl RibonucleicAcid {
-    pub fn new(s:&str) -> RibonucleicAcid {
-        RibonucleicAcid{string:s.to_string()}
+#[derive(Debug, PartialEq)]
+pub struct DNA;
+
+#[derive(Debug, PartialEq)]
+pub struct RNA;
+
+impl DNA {
+    pub fn new(dna: &str) -> Result<DNA, usize> {
+        unimplemented!("Construct new DNA from '{}' string. If string contains invalid nucleotides return index of first invalid nucleotide", dna);
+    }
+
+    pub fn into_rna(self) -> RNA {
+        unimplemented!("Transform DNA {:?} into corresponding RNA", self);
     }
 }
 
-#[derive(Debug)]
-pub struct DeoxyribonucleicAcid {string: String}
-impl DeoxyribonucleicAcid {
-    pub fn new(s:&str) -> DeoxyribonucleicAcid {
-        DeoxyribonucleicAcid{string:s.to_string()}
-    }
-    pub fn to_rna(&self) -> RibonucleicAcid{
-        RibonucleicAcid::new(
-            self.string.chars().fold(String::new(),|mut acc, x|{
-                acc.push(match x {
-                    'G' => 'C',
-                    'C' => 'G',
-                    'T' => 'A',
-                    _  => 'U',
-                });
-                acc
-            }).as_str())
+impl RNA {
+    pub fn new(rna: &str) -> Result<RNA, usize> {
+        unimplemented!("Construct new RNA from '{}' string. If string contains invalid nucleotides return index of first invalid nucleotide", rna);
     }
 }

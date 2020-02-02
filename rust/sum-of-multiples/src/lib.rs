@@ -1,5 +1,8 @@
-pub fn sum_of_multiples(x:i32, y:&Vec<i32>) -> i32 {
-    (1..x).filter(
-        |&i| y.iter().any(
-            |j| i%j == 0)).sum::<i32>()
+pub fn sum_of_multiples(limit: u32, factors: &[u32]) -> u32 {
+    if let Some(&first) = factors.first() {
+        return (first..limit)
+            .filter(|n| factors.iter().any(|factor| factor != &0 && n % factor == 0))
+            .sum();
+    }
+    0
 }

@@ -1,4 +1,5 @@
-pub fn is_pangram(sent:&str) -> bool {
-    let mut letters = "thequickbrownfoxjumpsoverthelazydog".chars(); // im as lazy as the dog
-    letters.all(|x| sent.to_lowercase().contains(x))
+/// Determine whether a sentence is a pangram.
+pub fn is_pangram(sentence: &str) -> bool {
+    let sentence = sentence.to_ascii_lowercase();
+    (b'a'..=b'z').all(|c| sentence.contains(c as char))
 }

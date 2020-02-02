@@ -1,26 +1,35 @@
 use std::collections::HashMap;
 
-pub fn nucleotide_counts(s:&str) -> Result<HashMap<char,usize>, &'static str> {
-    let mut r:HashMap<char,usize> = HashMap::new();
-    for c in vec!['A','C','G','T']{
-        let x = count(c,s);
-        if x.is_ok(){
-            r.insert(c,x.unwrap());
-        }
-        else{
-            return Err("bad dna");
-        }
+fn is_valid(nucleotide: &char) -> bool {
+    match nucleotide {
+        'A' | 'C' | 'G' | 'T' => true,
+        _ => false,
     }
-    Ok(r)
+}
+pub fn count(nucleotide: char, dna: &str) -> Result<usize, char> {
+    match nucleotide {
+        'A' | 'C' | 'G' | 'T' => dna.chars().try_fold(0, |acc, c| {
+            if is_valid(&c) {
+                Ok(acc + (c == nucleotide) as usize)
+            } else {
+                Err(c)
+            }
+        }),
+        _ => Err(nucleotide),
+    }
 }
 
-pub fn count(c:char,s:&str) -> Result<usize, &'static str> {
-    if !is_good(s) || (c!='A' &&  c!='C' && c!='G' && c!='T') {
-        return Err("bad dna");
+pub fn nucleotide_counts(dna: &str) -> Result<HashMap<char, usize>, char> {
+    let mut counts = HashMap::new();
+    for c in dna.chars() {
+        if is_valid(&c) {
+            *counts.entry(c).or_insert(0) += 1
+        } else {
+            return Err(c);
+        }
     }
-    Ok(s.chars().filter(|&x| x==c).count() )
-}
-
-pub fn is_good(s:&str) -> bool {
-    s.chars().all(|x| x=='A' || x=='C'|| x=='G' || x=='T')
+    for &c in &['A', 'C', 'G', 'T'] {
+        counts.entry(c).or_insert(0);
+    }
+    Ok(counts)
 }
